@@ -94,9 +94,10 @@ body {
 	text-align: center;
 	padding-block: 2em;
 }
-.gallery .nav {
+.tags-bar {
 	justify-content: center;
 }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #000000;
 	background-color: #BEB45A;
@@ -114,8 +115,8 @@ body {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
+
 .gallery-item {
 	position: absolute;
 	width: 100%;
@@ -123,7 +124,47 @@ body {
 	object-fit: cover;
 	padding: .5em;
 }
-.mg-prev, .mg-next {
+
+.show{
+	display: block;
+}
+
+.opacity{
+	background-color: rgba(130, 130, 130, 0.7);
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    pointer-events: none;
+	
+}
+
+.modal-body{
+	position: relative;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+	position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.modal-content{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.modal-inner{
+	display: flex;
+	align-items: center;
+}
+
+.modal-prev, .modal-next {
 	width: 30px;
 	height: 30px;
 	border-radius: 00%;
@@ -131,8 +172,26 @@ body {
 	align-items: center;
 	display: flex;
 	font-size: 24px;
+	border: none;
+	background-color: white;
 }
 
+.close{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.closeBtn{
+	border: none;
+	background-color: transparent;
+	padding: 10px;
+	width: 44px;
+}
+
+.overflow{
+	overflow: hidden;
+}
 
 .quote {
 	font-family: 'Spectral';
